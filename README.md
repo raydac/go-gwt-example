@@ -14,6 +14,6 @@ You need installed Java 1.8+ and Maven 3.5+ on your machine. Because the project
 You can just clone the project and then execute `mvn` command inside cloned folder (the project has default goals `clean install`)
 
 # Where to find result
-Afer build you can open `backend/bin` folder and there will be `backend-1.0.0-SNAPSHOT` or `backend-1.0.0-SNAPSHOT.exe` executable file which is the resulted file. If to execute such file hen browser will be started and frontend part will be shown.   
+Afer build you can open `backend/bin` folder and there will be `backend-1.0.0-SNAPSHOT` or `backend-1.0.0-SNAPSHOT.exe` executable file which is the resulted file. If to execute such file then browser will be started and frontend part will be shown.  
 
 ![screenshot](https://raw.githubusercontent.com/raydac/go-gwt-example/master/screenshot.png)
