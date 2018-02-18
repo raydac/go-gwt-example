@@ -1,76 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+    <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.igormaznitsa.go-gwt</groupId>
-  <artifactId>mvn-golang-example-gui-gwt</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
-  <packaging>pom</packaging>
+    <groupId>com.igormaznitsa.go-gwt</groupId>
+    <artifactId>mvn-golang-example-gui-gwt</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
-    <go.sdk>1.10</go.sdk>
-    <gwt.version>2.8.2</gwt.version>
-    <go.mvn>2.1.7</go.mvn>
-  </properties>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <go.sdk>1.10</go.sdk>
+        <gwt.version>2.8.2</gwt.version>
+        <go.mvn>2.1.7</go.mvn>
+    </properties>
 
-  <name>Golang+GWT example</name>  
-  <description>Example simple project shows how to use GWT as frontend GUI part for a Golang project</description>
+    <name>Golang+GWT example</name>  
+    <description>Example simple project shows how to use GWT as frontend GUI part for a Golang project</description>
 
-  <issueManagement>
-      <system>GitHub Issues</system>
-      <url>https://github.com/raydac/go-gwt-example/issues</url>
-  </issueManagement>
+    <issueManagement>
+        <system>GitHub Issues</system>
+        <url>https://github.com/raydac/go-gwt-example/issues</url>
+    </issueManagement>
 
-  <developers>
-      <developer>
-          <id>raydac</id>
-          <name>Igor Maznitsa</name>
-          <email>rrg4400@gmail.com</email>
-          <url>http://www.igormaznitsa.com</url>
-          <timezone>+3</timezone>
-          <roles>
-              <role>developer</role>
-          </roles>
-      </developer>
-  </developers>
+    <developers>
+        <developer>
+            <id>raydac</id>
+            <name>Igor Maznitsa</name>
+            <email>rrg4400@gmail.com</email>
+            <url>http://www.igormaznitsa.com</url>
+            <timezone>+3</timezone>
+            <roles>
+                <role>developer</role>
+            </roles>
+        </developer>
+    </developers>
     
-  <scm>
-      <url>https://github.com/raydac/go-gwt-example</url>
-      <connection>scm:git:git://github.com/raydac/go-gwt-example.git</connection>
-      <developerConnection>scm:git:git@github.com:raydac/go-gwt-example.git</developerConnection>
-  </scm>
+    <scm>
+        <url>https://github.com/raydac/go-gwt-example</url>
+        <connection>scm:git:git://github.com/raydac/go-gwt-example.git</connection>
+        <developerConnection>scm:git:git@github.com:raydac/go-gwt-example.git</developerConnection>
+    </scm>
 
-  <organization>
-      <name>Igor Maznitsa</name>
-      <url>http://www.igormaznitsa.com</url>
-  </organization>
+    <organization>
+        <name>Igor Maznitsa</name>
+        <url>http://www.igormaznitsa.com</url>
+    </organization>
 
-  <licenses>
-      <license>
-          <name>The Apache Software License, Version 2.0</name>
-          <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-          <distribution>repo</distribution>
-      </license>
-  </licenses>
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
 
-  <modules>
-    <module>frontend</module>
-    <module>backend</module>
-  </modules>
+    <modules>
+        <module>frontend</module>
+        <module>backend</module>
+    </modules>
 
-  <dependencyManagement>
-    <dependencies>
-      <dependency>
-        <groupId>com.google.gwt</groupId>
-        <artifactId>gwt</artifactId>
-        <version>${gwt.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-    </dependencies>
-  </dependencyManagement>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.google.gwt</groupId>
+                <artifactId>gwt</artifactId>
+                <version>${gwt.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <defaultGoal>clean install</defaultGoal>
+    </build>    
 
 </project>
