@@ -8,7 +8,7 @@ Of course it sounds very heterogenic and usually it makes problems in build proc
 
 # Requirements
 
-You need installed __Java 1.8+__ and Maven 3.5+ on your machine. Because the project uses [mvn-golang-wrapper](https://github.com/raydac/mvn-golang) it will automatically download GoLang SDK.
+You need installed __Java SDK 1.8+__ and Maven 3.5+ on your machine. Because the project uses [mvn-golang-wrapper](https://github.com/raydac/mvn-golang) it will automatically download GoLang SDK.
 
 # How to build
 You can just clone the project and then execute `mvn` command inside cloned folder (the project has default goals `clean install`)
