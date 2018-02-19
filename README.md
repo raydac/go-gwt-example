@@ -22,9 +22,10 @@ As third party libraries I use below listed ones:
  * __[open-golang](https://github.com/skratchdot/open-golang)__ to open default system browser for provded URL
  * __[go-bindata](https://github.com/jteeuwen/go-bindata)__ to pack frontend static data into executable file
 
-# Requirements
+# Requirements for build
 
-You need pre-installed __[Java SDK 1.8+](http://www.oracle.com/technetwork/java/javase/downloads/index.html)__ and [Maven 3.0.3+](https://maven.apache.org/) on your machine. Because the project uses [mvn-golang-wrapper](https://github.com/raydac/mvn-golang) it will automatically download GoLang SDK.
+You need pre-installed __[Java SDK 1.8+](http://www.oracle.com/technetwork/java/javase/downloads/index.html)__ and [Maven 3.0.3+](https://maven.apache.org/) on your machine. Because the project uses [mvn-golang-wrapper](https://github.com/raydac/mvn-golang) it will automatically download GoLang SDK.  
+__NB! Java is needed only for build purposes! As the build result there will be just standard Golang executable file which can be deliveed  and started without any Java!__
 
 # How to build
 You can just clone the project through `git clone https://github.com/raydac/go-gwt-example.git` and then execute `mvn` command inside cloned folder (the project has default goals `clean install`)
