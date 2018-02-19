@@ -12,7 +12,7 @@ The Project contains two parts
  * __backend__ part written in Golang, al stuff related to the backend part is situated in the `backend` folder
  
 It is not just regular web service because:
- * t starts on 127.0.0.1 address
+ * it starts on 127.0.0.1 local address
  * it doesn't have fixed port number, just after start it looks for free port and open default web browser by providing formed page URL
  * it will be closed in 5 seconds after GUI part in browser will be closed by user
 
