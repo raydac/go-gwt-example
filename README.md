@@ -3,8 +3,8 @@
 # Introduction
 
 Golang doesn't provide any GUI out of the box but we have a lot of 3rd party libraries unfortunately not many of them can be called as cross-platform ones. Fortunately we have WEB as modern cross-platform UI technology today.   
-In 2010 I took a part in a big project which strongly used [GWT](http://www.gwtproject.org/) for UI and I decided that it would be funny to try to use [GWT](http://www.gwtproject.org/) as frontend part for a Golang application which plays backend role.
-Of course it sounds very heterogenic and usually it makes problems in build process but because GWT is Java based technology, it is possible to use [Maven](https://maven.apache.org/) to build both Java part and Golang part in the same project (The Golang part will be built through [mvn-golang plugin](https://github.com/raydac/mvn-golang)).   
+In 2010 I took a part in a big project which strongly used [GWT](http://www.gwtproject.org/) for UI and I decided that it would be funny to try to use [GWT](http://www.gwtproject.org/) as frontend part for a Golang application which plays backend role (also it makes possible to use powerful GWT extensions like [GWT-Ext](http://gwt-ext.com/demo/) or [Smart-GWT](https://www.smartclient.com/smartgwt/showcase)).
+Of course it sounds very heterogenic and usually it makes problems in build process but because GWT is a Java based technology but it is possible to use [Maven](https://maven.apache.org/) to build both Java part and Golang part in the same project without problems (The Golang part will be built through [mvn-golang plugin](https://github.com/raydac/mvn-golang)).   
 
 # Project structure
 The Project contains two parts
