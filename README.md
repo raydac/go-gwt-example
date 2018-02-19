@@ -8,8 +8,8 @@ Of course it sounds very heterogenic and usually it makes problems in build proc
 
 # Project structure
 The Project contains two parts
- * __frontend__ part written in GWT
- * __backend__ part written in Golang
+ * __frontend__ part written in GWT, all stuff related to the front end part is situated in the `frontend` folder
+ * __backend__ part written in Golang, al stuff related to the backend part is situated in the `backend` folder
 
 ## Frontend part
 
