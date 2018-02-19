@@ -10,6 +10,11 @@ In 2010 I took a part in a big project which strongly used [GWT](http://www.gwtp
 The Project contains two parts
  * __frontend__ part written in GWT, all stuff related to the front end part is situated in the `frontend` folder
  * __backend__ part written in Golang, al stuff related to the backend part is situated in the `backend` folder
+ 
+It is not just regular web service because:
+ * t starts on 127.0.0.1 address
+ * it doesn't have fixed port number, just after start it looks for free port and open default web browser by providing formed page URL
+ * it will be closed in 5 seconds after GUI part in browser will be closed by user
 
 ## Frontend part
 
