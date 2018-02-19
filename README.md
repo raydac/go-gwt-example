@@ -4,7 +4,7 @@
 
 Golang doesn't provide any GUI out of the box, there are some 3rd party libraries for that but unfortunately not many of them work in real cross-platform manner or provide rich set of features and nice GUI. Fortunately today we have WEB as modern cross-platform UI technology which provides even more than we need.
 
-In 2010 I took a part in a big project which strongly used [GWT](http://www.gwtproject.org/) for frontend part and I decided that it would be interesting to try to organize GUI for a golang application through [GWT](http://www.gwtproject.org/) which would be used as frontend (also it would make possible to use powerful GWT extensions like [GWT-Ext](http://gwt-ext.com/demo/) or [Smart-GWT](https://www.smartclient.com/smartgwt/showcase)). Of course it sounds very heterogenic and usually such projects make pain (especially in Golang which doesn't provide strong possibilities for build and dependency management out of the box) but because GWT is a Java based technology then it is possible to use [Maven](https://maven.apache.org/) to build both Java part and Golang part in the same project without problems (Golang part will be built through [mvn-golang plugin](https://github.com/raydac/mvn-golang)).   
+In 2010 I took a part in a big project which strongly used [GWT](http://www.gwtproject.org/) for frontend part and I decided that it would be interesting to try to organize GUI for a golang application through [GWT](http://www.gwtproject.org/) which would be used as frontend (also it would make possibility to use powerful GWT extensions like [GWT-Ext](http://gwt-ext.com/demo/) or [Smart-GWT](https://www.smartclient.com/smartgwt/showcase)). Of course it sounds very heterogenic and usually such projects make pain (especially in Golang which doesn't provide strong possibilities for build and dependency management out of the box) but because GWT is a Java based technology then it is possible to use [Maven](https://maven.apache.org/) to build both Java part and Golang part in the same project without problems (Golang part will be built through [mvn-golang plugin](https://github.com/raydac/mvn-golang)).   
 
 # Project structure
 The Project contains two parts
@@ -29,7 +29,7 @@ You need pre-installed __[Java SDK 1.8+](http://www.oracle.com/technetwork/java/
 # How to build
 You can just clone the project through `git clone https://github.com/raydac/go-gwt-example.git` and then execute `mvn` command inside cloned folder (the project has default goals `clean install`)
 
-# Where is the executable file?
+# Where to look for executable file?
 After build you can open `backend/bin` folder and there will be `backend-1.0.0-SNAPSHOT` or `backend-1.0.0-SNAPSHOT.exe` executable file which is the result file. If to execute such file then __default system browser__ will be started and frontend part will be shown.  
 
 ![screenshot](https://raw.githubusercontent.com/raydac/go-gwt-example/master/screenshot.png)
