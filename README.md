@@ -17,7 +17,7 @@ The Part doesn't have any magic and implemented as a single web age aplication w
 
 ## Backend part
 
-It is a just simple Golang application implements web server. Just after start it finds first free port and use it to start inside web server, after that it opens the link to the inside main web page in default system browser. If it doesn't get requests from its frontend part during 5 seconds then it guesses that its frontend part has been closed and end execution.   
+It is a just simple Golang application implementing web server. Just after start it finds first free port and use it to start inside web server on local address 127.0.0.1, after that it opens the link to the inside main web page in default system browser. If it doesn't get requests from its frontend part during 5 seconds then it guesses that its frontend part has been closed and end execution.   
 As third party libraries I use below listed ones:
  * __[open-golang](https://github.com/skratchdot/open-golang)__ to open default system browser for provded URL
  * __[go-bindata](https://github.com/jteeuwen/go-bindata)__ to pack frontend static data into executable file
