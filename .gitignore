@@ -13,3 +13,6 @@ buildNumber.properties
 !/.mvn/wrapper/maven-wrapper.jar
 /backend/bin/
 /.idea/
+.project
+frontend/.classpath
+.settings
