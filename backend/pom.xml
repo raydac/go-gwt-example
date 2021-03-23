@@ -56,6 +56,9 @@
                     <addToGoPath>
                         <folder>${basedir}${file.separator}bin</folder>
                     </addToGoPath>
+                    <env>
+                        <GO111MODULE>off</GO111MODULE>
+                    </env>
                 </configuration>
                 <executions>
                     <execution>
