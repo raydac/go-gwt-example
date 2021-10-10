@@ -1,4 +1,5 @@
 target/
+bin/
 *.iml
 pom.xml.tag
 pom.xml.releaseBackup
