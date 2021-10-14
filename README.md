@@ -1,4 +1,4 @@
-![golang-gwt](https://raw.githubusercontent.com/raydac/go-gwt-example/master/frontend/src/main/webapp/images/logo.png)
+![golang-gwt](assets/banner.png)
 
 # Introduction
 
@@ -29,7 +29,7 @@ As third party libraries I use below listed ones:
 
 # Requirements for build
 
-You need pre-installed __[Java SDK 1.8+](http://www.oracle.com/technetwork/java/javase/downloads/index.html)__ and [Maven 3.0.3+](https://maven.apache.org/) on your machine. Because the project uses [mvn-golang-wrapper](https://github.com/raydac/mvn-golang) it will automatically download GoLang SDK.  
+It requires pre-installed __[Java SDK 1.8+](http://www.oracle.com/technetwork/java/javase/downloads/index.html)__ and [Maven 3.0.3+](https://maven.apache.org/) on your machine. Because the project uses [mvn-golang-wrapper](https://github.com/raydac/mvn-golang) it will automatically download GoLang SDK.  
 __NB! Java is needed only for build purposes! As the build result there will be just standard Golang executable file which can be delivered  and started without any Java!__
 
 # How to build
