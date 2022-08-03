@@ -11,9 +11,9 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <go.sdk>1.17.2</go.sdk>
-        <gwt.version>2.9.0</gwt.version>
-        <go.mvn>2.3.9</go.mvn>
+        <go.sdk>1.19</go.sdk>
+        <gwt.version>2.10.0</gwt.version>
+        <go.mvn>2.3.10</go.mvn>
     </properties>
 
     <name>Golang+GWT example</name>  
