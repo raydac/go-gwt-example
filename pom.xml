@@ -11,7 +11,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <go.sdk>1.20.5</go.sdk>
+        <go.sdk>1.20.6</go.sdk>
         <gwt.version>2.10.0</gwt.version>
         <go.mvn>2.3.10</go.mvn>
     </properties>
