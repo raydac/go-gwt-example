@@ -16,4 +16,5 @@ buildNumber.properties
 /.idea/
 .project
 frontend/.classpath
+binasset.go
 .settings

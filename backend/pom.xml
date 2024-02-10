@@ -53,27 +53,32 @@
                 <extensions>true</extensions>
                 <configuration>
                     <goVersion>${go.sdk}</goVersion>
-                    <addToGoPath>
-                        <folder>${basedir}${file.separator}bin</folder>
-                    </addToGoPath>
-                    <env>
-                        <GO111MODULE>off</GO111MODULE>
-                    </env>
                 </configuration>
                 <executions>
+                    <execution>
+                        <id>default-test</id>
+                        <phase>none</phase>
+                    </execution>
                     <execution>
                         <id>default-get</id>
                         <goals>
                             <goal>get</goal>
                         </goals>
                         <configuration>
-                            <buildFlags>
-                                <flag>-u</flag>
-                            </buildFlags>
-                            <autofixGitCache>true</autofixGitCache>
                             <packages>
-                                <package>github.com/jteeuwen/go-bindata/...</package>
                                 <package>github.com/skratchdot/open-golang/open</package>
+                            </packages>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>install-gobindata</id>
+                        <phase>initialize</phase>
+                        <goals>
+                            <goal>install</goal>
+                        </goals>
+                        <configuration>
+                            <packages>
+                                <package>github.com/kevinburke/go-bindata/v4/...@latest</package>
                             </packages>
                         </configuration>
                     </execution>
