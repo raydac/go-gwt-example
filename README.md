@@ -29,7 +29,7 @@ As third party libraries I use below listed ones:
 
 # Requirements for build
 
-It requires pre-installed __[Java SDK 1.8+](http://www.oracle.com/technetwork/java/javase/downloads/index.html)__ and [Maven 3.8.1+](https://maven.apache.org/) on your machine. Because the project uses [gosdk-wrapper-maven-plugin](https://github.com/raydac/gosdk-wrapper-maven-plugin) it will automatically download GoLang SDK.  
+It requires pre-installed __[Java SDK 11+](http://www.oracle.com/technetwork/java/javase/downloads/index.html)__ and [Maven 3.8.1+](https://maven.apache.org/) on your machine. Because the project uses [gosdk-wrapper-maven-plugin](https://github.com/raydac/gosdk-wrapper-maven-plugin) it will automatically download GoLang SDK.  
 __NB! Java is needed only for build purposes! As the build result there will be just standard Golang executable file which can be delivered  and started without any Java!__
 
 # How to build
@@ -38,4 +38,4 @@ You can just clone the project through `git clone https://github.com/raydac/go-g
 # Where to look for executable file?
 After build you can open `backend/bin` folder and there will be `backend-1.0.0-SNAPSHOT` or `backend-1.0.0-SNAPSHOT.exe` executable file which is the result file. If to execute such file then __default system browser__ will be started and frontend part will be shown.  
 
-![screenshot](https://raw.githubusercontent.com/raydac/go-gwt-example/master/screenshot.png)
+![screenshot](assets/screenshot.png)
