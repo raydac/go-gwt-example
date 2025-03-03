@@ -3,6 +3,7 @@ package main
 import (
 	"bytes"
 	"encoding/json"
+	"mvn-golang-example-gui-gwt/frontend/bindata"
 	"github.com/skratchdot/open-golang/open"
 	"io"
 	"log"
@@ -15,7 +16,7 @@ import (
 	"time"
 )
 
-//go:generate go-bindata -prefix "../../frontend/target/frontend.out" -o ../src/binasset.go ../../frontend/target/frontend.out/...
+//go:generate go-bindata -prefix "../../frontend/target/frontend.out" -pkg bindata -o ../.build/frontend/bindata/binasset.go ../../frontend/target/frontend.out/...
 
 var watchdog_chn = make(chan int)
 
@@ -75,7 +76,7 @@ func static_handler(rw http.ResponseWriter, req *http.Request) {
 		if path == "__mailbox__" {
 			push_handler(rw, req)
 		} else {
-			if bs, err := Asset(path); err != nil {
+			if bs, err := bindata.Asset(path); err != nil {
 				log.Printf("Can't find resource : %s", path)
 				rw.WriteHeader(http.StatusNotFound)
 			} else {

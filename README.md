@@ -4,7 +4,7 @@
 
 Golang doesn't provide any GUI out of the box, there are some 3rd party libraries for that but unfortunately not many of them work in real cross-platform manner or provide rich set of features and nice GUI. Fortunately today we have WEB as modern cross-platform UI technology which provides even more than we need.
 
-In 2010 I took a part in a big project which strongly used [GWT](http://www.gwtproject.org/) for frontend part and I decided that it would be interesting to try to organize GUI for a golang application through [GWT](http://www.gwtproject.org/) which would be used as frontend (also it would make possibility to use powerful GWT extensions like [GWT-Ext](http://gwt-ext.com/demo/) or [Smart-GWT](https://www.smartclient.com/smartgwt/showcase)). Of course it sounds very heterogenic and usually such projects make pain (especially in Golang which doesn't provide strong possibilities for build and dependency management out of the box) but because GWT is a Java based technology then it is possible to use [Maven](https://maven.apache.org/) to build both Java part and Golang part in the same project without problems (Golang part will be built through [mvn-golang plugin](https://github.com/raydac/mvn-golang)).   
+In 2010 I took a part in a big project which strongly used [GWT](http://www.gwtproject.org/) for frontend part and I decided that it would be interesting to try to organize GUI for a golang application through [GWT](http://www.gwtproject.org/) which would be used as frontend (also it would make possibility to use powerful GWT extensions like [GWT-Ext](http://gwt-ext.com/demo/) or [Smart-GWT](https://www.smartclient.com/smartgwt/showcase)). Of course it sounds very heterogenic and usually such projects make pain (especially in Golang which doesn't provide strong possibilities for build and dependency management out of the box) but because GWT is a Java based technology then it is possible to use [Maven](https://maven.apache.org/) to build both Java part and Golang part in the same project without problems (Golang part will be built through [gosdk-wrapper-maven-plugin](https://github.com/raydac/gosdk-wrapper-maven-plugin)).   
 
 # Project structure
 The Project contains two parts
@@ -29,7 +29,7 @@ As third party libraries I use below listed ones:
 
 # Requirements for build
 
-It requires pre-installed __[Java SDK 1.8+](http://www.oracle.com/technetwork/java/javase/downloads/index.html)__ and [Maven 3.0.3+](https://maven.apache.org/) on your machine. Because the project uses [mvn-golang-wrapper](https://github.com/raydac/mvn-golang) it will automatically download GoLang SDK.  
+It requires pre-installed __[Java SDK 1.8+](http://www.oracle.com/technetwork/java/javase/downloads/index.html)__ and [Maven 3.8.1+](https://maven.apache.org/) on your machine. Because the project uses [gosdk-wrapper-maven-plugin](https://github.com/raydac/gosdk-wrapper-maven-plugin) it will automatically download GoLang SDK.  
 __NB! Java is needed only for build purposes! As the build result there will be just standard Golang executable file which can be delivered  and started without any Java!__
 
 # How to build
