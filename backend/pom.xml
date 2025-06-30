@@ -139,9 +139,10 @@
             <plugin>
                 <groupId>com.igormaznitsa</groupId>
                 <artifactId>gosdk-wrapper-maven-plugin</artifactId>
-                <version>1.0.0</version>
+                <version>1.0.5</version>
                 <configuration>
                     <workDir>${project.basedir}${file.separator}src</workDir>
+                    <goVersion>1.24.4</goVersion>
                     <env>
                         <GOPATH>${go.path.folder}</GOPATH>
                         <GOBIN>${go.target.temp.build}</GOBIN>

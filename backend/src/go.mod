@@ -1,6 +1,6 @@
 module mvn-golang-example-gui-gwt
 
-        go 1.21.7
+        go 1.24.4
 
         require (
         github.com/jteeuwen/go-bindata v3.0.7+incompatible // indirect
